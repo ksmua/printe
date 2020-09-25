@@ -5,24 +5,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Printe</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Roboto&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/fonts.css">
   <link rel="stylesheet" href="./styles/style.css">
   
 </head>
 <body>
 
-  <header>
+  <header class="wrapper">
     <div class="logo">
       <img src="./img/logo_img.svg" alt="logo">
-      <div class="slogan">
+      <div class="logo__text">
         <h1>printe</h1>
         <h2>Ваша типография</h2>
       </div>
     </div>
+    <div class="info">
+      <h2 class="slogan">Качественная оперативная цифровая, широкоформатная и сувенирная полиграфия!</h2>
+      <p class="work-time">Работаем с 9 до 18, вс и сб выходные</p>
+    </div>
+    
+    <div class="links">
+
+      <div class="links__top">
+        <div class="account">
+          <img class="account__ico" src="./img/user.svg" alt="user-ico">
+          <a href="#">Личный кабинет</a>
+        </div>
+        
+        <p class="email">
+          <a href="mailto:maket@test-vertka.ua">maket@test-vertka.ua</a>
+        </p>
+      </div>
+
+      <div class="links__bottom">
+        <a href="#">
+          <img class="facebook__ico" src="./img/facebook.svg" alt="facebook-link">
+        </a>
+        <div class="phones">
+          <div class="phones__primary">
+            <img class="phones__ico" src="./img/phone.svg" alt="phone-ico">
+            <a href="tel:+0443314042">(044) 331-40-42</a>
+            <button id="phones__btn"><img src="./img/chevron-down.svg" alt="sevron-on-button"></button>
+          </div>
+          <ul class="phones__mobile">
+            <li>
+              <img src="./img/vodafone.svg" alt="vodafone-ico">
+              <a href="tel:+380994455418">(099) 445-54-18</a>
+            </li>
+            <li>
+              <img src="./img/kyivstar.svg" alt="kyivstar-ico">
+              <a href="tel:+380964977803">(096) 497-78-03</a>
+            </li>
+            <li>
+              <img src="./img/lifecell.svg" alt="lifecell-ico">
+              <a href="tel:+380634351681">(063) 435-16-81</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="shoping-cart">
+      <img src="./img/shopping-cart.svg" alt="shoping-cart">
+      <span class="shoping-cart__counter">3</span>
+    </div>
   </header>
   <main>
-    <nav></nav>
+    <nav>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Продукция</a></li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">База знаний</a></li>
+      </ul>
+    </nav>
     <section class="banner">
       <img src="img/_1170px.jpg" 
            sizes="100vw" 
@@ -34,11 +93,11 @@
     
       <div class="banner__text">
         <h2 class="banner__title">Оперативная печать полиграфии от 1 дня!</h2>
-        <h3 class="banner__subtitle">Доставка в любой город Украины</h3>>
+        <h3 class="banner__subtitle">Доставка в любой город Украины</h3>
       </div>
     </section>
   </main>
   <footer></footer>
-  
+  <script src="./scripts/index.js"></script>
 </body>
 </html>

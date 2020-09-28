@@ -37,7 +37,7 @@
           </div>
           
           <p class="email">
-            <a href="mailto:maket@test-vertka.ua">maket@test-vertka.ua</a>
+            <a href="mailto:maket@test-vertka.ua">maket@test-ver(s)tka.ua</a>
           </p>
         </div>
 
@@ -80,13 +80,13 @@
     <nav>
       <div class="menu-bar wrapper">
         <ul> 
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Продукция</a></li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">База знаний</a></li>
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="nav-element"><a class="nav-element__link" href="#">Главная</a></li>
+          <li class="nav-element"><a class="nav-element__link" href="#">Продукция</a></li>
+          <li class="nav-element"><a class="nav-element__link" href="#">Доставка и оплата</a></li>
+          <li class="nav-element"><a class="nav-element__link" href="#">Новости</a></li>
+          <li class="nav-element"><a class="nav-element__link" href="#">База знаний</a></li>
+          <li class="nav-element"><a class="nav-element__link" href="#">О нас</a></li>
+          <li class="nav-element"><a class="nav-element__link" href="#">Контакты</a></li>
         </ul>
         <div class="search-field">
           <button id="search__btn"><img src="./img/search.svg" alt="search btn icon"></button>
@@ -111,12 +111,85 @@
       </div>
       <div class="banner-btn">
 
-        <button class="blue-btn">Сделать заказа</button>
+        <button class="blue-btn">Сделать заказ(а)</button>
       </div>
       <!-- <button class="blue-btn--bold">Сделать заказа2</button> -->
     </section>
+
+    <div class="content">
+      <section class="products">Продукция</section>
+      <section class="about-us">О нас</section>
+      <section class="news">Новости</section>
+    </div>
+  
   </main>
-  <footer></footer>
+  <footer>
+    <div class="footer wrapper">
+      <div class="footer__info">
+        <div class="logo">
+          <img src="./img/logo_img.svg" alt="logo">
+          <div class="logo__text">
+            <h1>printe</h1>
+            <h2>Ваша типография</h2>
+          </div>
+        </div>
+        <div class="info info--footer">
+          <h2 class="slogan slogan--footer">Качественная оперативная цифровая, широкоформатная и сувенирная полиграфия!</h2>
+          <p class="work-time work-time--footer">Работаем с 9 до 18, вс и сб выходные</p>
+        </div>
+      </div>
+      
+      <nav class="footer-links">
+        <div class="menu-bar menu-bar--footer wrapper">
+          <ul>
+            <li class="nav-element nav-element--footer"><a class="nav-element__link nav-element__link--footer" href="#">Главная</a></li>
+            <li class="nav-element nav-element--footer"><a class="nav-element__link nav-element__link--footer" href="#">Продукция</a></li>
+            <li class="nav-element nav-element--footer"><a class="nav-element__link nav-element__link--footer" href="#">Доставка и оплата</a></li>
+            <li class="nav-element nav-element--footer"><a class="nav-element__link nav-element__link--footer" href="#">Новости</a></li>
+            <li class="nav-element nav-element--footer"><a class="nav-element__link nav-element__link--footer" href="#">База знаний</a></li>
+            <li class="nav-element nav-element--footer"><a class="nav-element__link nav-element__link--footer" href="#">О нас</a></li>
+            <li class="nav-element nav-element--footer"><a class="nav-element__link nav-element__link--footer" href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+      <div class="links__bottom">
+        <a href="#">
+          <img class="facebook__ico" src="./img/facebook.svg" alt="facebook-link">
+        </a>
+        <div class="phones">
+          <div class="phones__primary">
+            <img class="phones__ico" src="./img/phone.svg" alt="phone-ico">
+            <a href="tel:+0443314042">(044) 331-40-42</a>
+            <button id="phones__btn"><img src="./img/chevron-down.svg" alt="sevron-on-button"></button>
+          </div>
+          <ul class="phones__mobile">
+            <li>
+              <img src="./img/vodafone.svg" alt="vodafone-ico">
+              <a href="tel:+380994455418">(099) 445-54-18</a>
+            </li>
+            <li>
+              <img src="./img/kyivstar.svg" alt="kyivstar-ico">
+              <a href="tel:+380964977803">(096) 497-78-03</a>
+            </li>
+            <li>
+              <img src="./img/lifecell.svg" alt="lifecell-ico">
+              <a href="tel:+380634351681">(063) 435-16-81</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+     <div class="copyright">2018 — Все права защищены</div> 
+      <div class="developer">
+        <a href="https://glyanec.net/">
+          <img id="developer-logo" src="./img/glyanec.svg" alt="glyanec.net">
+          Глянец — Разработка сайтов
+        </a>
+      </div>
+    </div>
+
+
+  </footer>
   <script src="./scripts/index.js"></script>
 </body>
 </html>

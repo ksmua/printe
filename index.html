@@ -19,8 +19,8 @@
       <div class="logo">
         <img src="./img/logo_img.svg" alt="logo">
         <div class="logo__text">
-          <h1>printe</h1>
-          <h2>Ваша типография</h2>
+          <h1><a href="#">printe</a></h1>
+          <h2><a href="#">Ваша типография</a></h2>
         </div>
       </div>
       <div class="info">
@@ -76,6 +76,7 @@
       </div>
     </div>
   </header>
+
   <main>
     <nav>
       <div class="menu-bar wrapper">
@@ -117,24 +118,136 @@
     </section>
 
     <div class="content">
-      <section class="products">Продукция</section>
-      <section class="about-us">О нас</section>
-      <section class="news">Новости</section>
-    </div>
+      <section class="products wrapper">
+        <h3 class="section-header">Продукция</h3>
+        
+        <div class="prod-cards">
+          
+          <div class="prod-card">
+            <div class="prod-card__ico">
+              <img src="./img/office_prod.svg" alt="office poduction icon">
+            </div>
+            <div class="prod-card__content">
+              <h4 class="prod-card__title">
+              <a href="#">Офисная продукция</a>
+              </h4>
+              <ul class="prod-card__list">
+                <li><a href="#">Визитки</a></li>
+                <li><a href="#">Конверты</a></li>
+                <li><a href="#">Папки</a></li>
+                <li><a href="#">Книги</a></li>
+                <li><a href="#">Блокноты</a></li>
+                <li><a href="#">Фирменные бланки</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="prod-card">
+            <div class="prod-card__ico">
+              <img src="./img/advertising_prod.svg" alt="advertising production icon">
+            </div>
+            <div class="prod-card__content">
+              <h4 class="prod-card__title">
+                <a href="#">Рекламная продукция</a>
+              </h4>
+              <ul class="prod-card__list prod-card__list--2col">
+                <li><a href="#">Листовки</a></li>
+                <li><a href="#">Флаера</a></li>
+                <li><a href="#">Буклеты</a></li>
+                <li><a href="#">Календари</a></li>
+                <li><a href="#">Блокноты</a></li>
   
+                <li><a href="#">Плакаты</a></li>
+                <li><a href="#">Баннеры</a></li>
+                <li><a href="#">Магниты</a></li>
+                <li><a href="#">Наклейки</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="prod-card">
+            <div class="prod-card__ico">
+              <img src="./img/business_prod.svg" alt="busines production icon">
+            </div>
+            <div class="prod-card__content">
+              <h4 class="prod-card__title">
+                <a href="#">Для бизнеса</a>
+              </h4>
+              <ul class="prod-card__list">
+                <li><a href="#">Каталоги</a></li>
+                <li><a href="#">Журналы</a></li>
+                <li><a href="#">Дисконтные карты</a></li>
+                <li><a href="#">Бейджи</a></li>
+                <li><a href="#">Гарантиныйные наклейки</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div> 
+      </section>
+
+      <article class="about-us">
+        <div class="wrapper">
+          <header>
+            <h3 class="section-header">О нас</h3>
+            <h4 class="section-sub-header">Оперативная печать полиграфии от 1 дня!</h4>
+          </header>
+          <p>Перед долгим заплывом намажьтесь солнцезащитным кремом. Вода не спасает от вредного излучения, оно проникает и на
+            глубину 1 м.</p>
+          <p>Прежде чем отправиться на пляж, съешьте что-нибудь солененькое или выпейте чай с лимоном. Считается, что тем самым вы
+            предотвратите потерю важных минеральных веществ, которые покидают тело вместе с потом, а загар при этом ляжет ровнее.
+            Находясь на солнце, следует больше двигаться — плавать, делать гимнастику, играть в мяч и т.д. Лучше ходить босиком,
+            чем
+            в тапочках. Не рекомендуется покрывать ногти лаком, пусть они отдохнут и получат солнечные лучи и воздух.</p>
+        </div>
+      </article>
+
+      <section class="news wrapper">
+        <h3 class="section-header">Новости</h3>
+        <div class="news-cards">
+          
+          <div class="news-card">
+            <p class="news-card__date">14 марта 2018</p>
+            <p class="news-card__link">
+              <a href="#">Оазисное земледелие поднимает культурный субэкваториальный климат, там же можно с палками</a>
+            </p>
+          </div>
+
+          <div class="news-card">
+            <p class="news-card__date">14 марта 2018</p>
+            <p class="news-card__link">
+              <a href="#">Оазисное земледелие поднимает культурный субэкваториальный климат, там же можно с палками</a>
+            </p>
+          </div>
+
+          <div class="news-card">
+            <p class="news-card__date">14 марта 2018</p>
+            <p class="news-card__link">
+              <a href="#">Оазисное земледелие поднимает культурный субэкваториальный климат, там же можно с палками</a>
+            </p>
+          </div>
+
+        </div>
+        <button id="all-news" class="transparent-btn">Смотреть все новости</button>
+      </section>
+    </div>
+   
   </main>
+
   <footer>
     <div class="footer wrapper clearfix">
       <!-- <div class=""> -->
 
         <div class="footer__info">
+          
           <div class="logo logo--footer">
             <img src="./img/logo_img.svg" alt="logo">
             <div class="logo__text">
-              <h1>printe</h1>
-              <h2>Ваша типография</h2>
+              <h1><a href="#">printe</a></h1>
+              <h2><a href="#">Ваша типография</a></h2>
             </div>
           </div>
+          
           <div class="info info--footer">
             <h2 class="slogan slogan--footer">Качественная оперативная цифровая, широкоформатная и сувенирная полиграфия!</h2>
             <p class="work-time work-time--footer">Работаем с 9 до 18, вс и сб выходные</p>

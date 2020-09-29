@@ -163,6 +163,8 @@ header {
   font-weight: bold;
   line-height: 19px;
   position: relative;
+  font-family: "ClearSans";
+  display: inline-block;
 }
 
 .phones__ico {
@@ -408,7 +410,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-nav ul {
+.nav-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -655,11 +657,6 @@ footer {
   padding-top: 20px;
 }
 
-.info--footer {
-  max-width: 261px;
-  text-align: left;
-}
-
 .slogan--footer {
   margin-bottom: 20px;
 }
@@ -671,18 +668,65 @@ footer {
 /*end 26-09-2020 23:30*/
 
 /*start 27-09-2020 21:52*/
+.footer {
+  position: relative;
+  background-color: rgb(243, 243, 243);
+}
+.logo--footer {
+  margin-right: 42px;
+  float: left;
+}
+
+.info--footer {
+  max-width: 263px;
+  text-align: left;
+  background-color: khaki;
+  float: left;
+  padding-top: 8px;
+  padding-left: 0;
+  /* margin-right: 50px; */
+}
+.info--footer h2 {
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
 .footer-links {
   box-shadow: unset;
-  
+  /* float: left; */
+  width: unset;
+  background-color: mediumaquamarine;
+  /* position: relative; */
 }
-.footer-links ul {
+
+.footer-links > ul {
+  display: block;
+  float: left;
+  /* max-width: 360px; */
+  /* width: 50%; */
+}
+.nav-list--footer {
+  font-family: 'Roboto';
+  display: inline;
 }
 .menu-bar--footer {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-width: 600px;
-  min-height: 300px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  /* max-width: 600px; */
+  /* min-height: 300px; */
+  /* display: block; */
+  background-color: lightsalmon;
+  -webkit-column-count: 2;
+  -moz--column-count: 2;
+  column-count: 3;
+  column-width: 60px;
+  column-gap: 10px;
+  display: inline-block;
+  position: absolute;
+  width: 30%;
+  padding-left: 50px;
+  padding-top: 6px;
 }
 .nav-element--footer:first-child {
   margin-left: 0;
@@ -694,11 +738,33 @@ footer {
   border-top: 1px solid transparent;
 }
 .nav-element--footer {
-  min-width: 150px;
+  max-width: 150px;
+  background-color: lightgreen;
+  border: 1px solid red;
 }
 .nav-element__link--footer {
   text-transform: unset;
   font-weight: normal;
+  width: 190px;
+  padding-left: 0;
+  margin-left: 0;
+  margin-right: 17px;
+  margin-bottom: 21px;
+  padding-left: 50px;
+  padding-right: 0;
+  text-align: left;
+  height: 21px;
+  display: inline-block;
+  border: 1px solid blue;
+}
+.nav-element__link--footer:last-child {
+  /* padding-left: 0; */
+  text-align: right;
+  margin: -42px 0 0 0; 
+  width: auto;
+  position: relative;
+  float: right;
+  vertical-align: top;
 }
 /*end 27-09-2020 23:10*/
 
@@ -706,4 +772,33 @@ footer {
 /*end 28-09-2020 11:00*/
 
 /*start 28-09-2020 14:00*/
+/*end 28-09-2020 16:00*/
 
+/*start 28-09-2020 17:30*/
+.links__bottom--footer {
+  display: block;
+  float: right;
+  width: 222px;
+  background-color: lightslategrey;
+  shape-outside: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        /* shape-margin:20px; */
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  margin: 0 0 0 -55px;
+}
+.copyright {
+  position: relative;
+  top: -36px;
+}
+.developer {
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: 22px;
+
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

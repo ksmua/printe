@@ -20,7 +20,7 @@
 }
 
 header {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   display: block;
 }
 
@@ -52,8 +52,6 @@ header {
 
 .logo h1, .logo h2 {
   font-family: 'Montserrat', sans-serif;
-  margin-block-start: 0;
-  margin-block-end: 0;
 }
 
 .logo h1 a {
@@ -192,7 +190,7 @@ header {
 .phones__mobile {
   display: none;
   font-weight: normal;
-  background-color: white;
+  background-color: #FFF;
   width: 219px;
   height: 167px;
   padding: 30px 5px 30px 30px;
@@ -210,7 +208,7 @@ header {
   right: 6px;
   width: 28px;
   height: 28px;
-  background-color: white;
+  background-color: #FFF;
   transform: rotate(45deg);
 }
 
@@ -244,7 +242,7 @@ header {
   right: 6px;
   width: 28px;
   height: 28px;
-  background-color: white;
+  background-color: #FFF;
   transform: rotate(45deg);
 }
 .phones__mobile--footer:before {
@@ -260,7 +258,7 @@ header {
 }
 
 .shoping-cart__counter {
-  color: white;
+  color: #FFF;
   font-size: 14px;
   position: absolute;
   top: 8.5px;
@@ -317,7 +315,6 @@ header {
   }
 }
 
-/* @media (max-width: 820px) { */
 @media (max-width: 870px) {
   .nav-element .nav-element__link {
     font-size: 14px;  
@@ -549,7 +546,7 @@ nav {
   font-family: "ClearSans";
   font-weight: bold;
   width: 100%;
-  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .menu-bar{
@@ -632,7 +629,7 @@ nav {
     padding: 0 10px;
   }
   .nav-element:last-child {
-    margin-right: 0px;
+    margin-right: 0;
   }
 }
 
@@ -655,8 +652,8 @@ nav {
 
 .search-input.show {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   height: 28px;
   z-index: 2;
 }
@@ -680,8 +677,8 @@ nav {
 .banner__text {
   font-family: "ClearSans";
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -691,7 +688,7 @@ nav {
 }
 
 .banner__title {
-  color: white;
+  color: #FFF;
   font-size: 57px;
   line-height: 67px;
   position: relative;
@@ -703,7 +700,7 @@ nav {
   content: "";
   display: block;
   height: 2px;
-  border-top: 2px solid white;
+  border-top: 2px solid #FFF;
   width: 120px;
   position: absolute;
   bottom: -10px;
@@ -714,7 +711,7 @@ nav {
 .banner__subtitle {
   font-size: 24px;
   line-height: 28px;
-  color: white;
+  color: #FFF;
   text-align: center;
 }
 
@@ -724,7 +721,7 @@ nav {
 
 .blue-btn {
   background-color: var(--blue-color);
-  color: white;
+  color: #FFF;
   border: none;
   border-radius: 2px;
   height: 32px;
@@ -740,7 +737,7 @@ nav {
 
 .blue-btn--bold {
   background-color: var(--blue-color);
-  color: white;
+  color: #FFF;
   border: none;
   border-radius: 2px;
   height: 48px;
@@ -859,7 +856,7 @@ nav {
 
 .prod-card {
   border: 1px solid rgba(220, 225, 230, 1);
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
   padding: 25px 31px 25px 0;
   width: 30%;
   min-width: 310px;
@@ -873,7 +870,6 @@ nav {
 .prod-card__ico {
   width: 30%;
   max-width: 120px;
-  /* background-color: lightblue; */
   text-align: center;
   padding: 0 10px;
 }
@@ -981,8 +977,8 @@ nav {
 
 .news-card:hover {
   border-top: 1px solid var(--blue-color);
-  background-color: white;
-  box-shadow: 0px 14px 24px 0px rgba(0, 0, 0, 0.05);
+  background-color: #FFF;
+  box-shadow: 0 14px 24px 0 rgba(0, 0, 0, 0.05);
 }
 
 .news-card:hover a {
@@ -1021,7 +1017,7 @@ footer {
   background-color: rgba(247, 247, 247, 1);
   min-height: 159px;
   padding-top: 20px;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05) inset;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05) inset;
 }
 
 .slogan--footer {
@@ -1177,7 +1173,6 @@ footer {
     margin: 0;
     column-count: 3;
     column-gap: 9%;
-    column-width: 30%;
     order: 1;
     width: 60%;
   }
@@ -1214,14 +1209,14 @@ footer {
 }
 
 @media (max-width: 768px) {
-   .nav-links {
-     width: 80%;
-     column-count: 3;
-     column-width: unset;
-   }
+  .nav-links {
+    width: 80%;
+    column-count: 3;
+    column-width: unset;
+  }
    .links__bottom--footer {
-     margin-bottom: 15px;
-   }
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -1238,10 +1233,10 @@ footer {
     align-items: center;
   } 
   .nav-links {
-     width: 80%;
-     column-count: 2; 
-     column-width: unset;
-   }
+    width: 80%;
+    column-count: 2; 
+    column-width: unset;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1253,8 +1248,8 @@ footer {
     display: block;
   }
   .links__bottom--footer {
-     margin-bottom: 25px;
-   }
+    margin-bottom: 25px;
+  }
   
   .copyright {
     padding-left: unset;

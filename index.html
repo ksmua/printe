@@ -49,7 +49,7 @@
             <div class="phones__primary">
               <img class="phones__ico" src="./img/phone.svg" alt="phone-ico">
               <a href="tel:+0443314042">(044) 331-40-42</a>
-              <button id="phones__btn"><img src="./img/chevron-down.svg" alt="sevron-on-button"></button>
+              <button class="phones__btn"><img src="./img/chevron-down.svg" alt="chevron-on-button"></button>
             </div>
             <ul class="phones__mobile">
               <li>
@@ -90,7 +90,11 @@
           <li class="nav-element"><a class="nav-element__link" href="#">Контакты</a></li>
         </ul>
         <div class="search-field">
+          <input type="text" class="search-field hide">
           <button id="search__btn"><img src="./img/search.svg" alt="search btn icon"></button>
+        </div>
+        <div class="menu-bar__btn">
+          <span></span>
         </div>
       </div>
     </nav>
@@ -228,6 +232,7 @@
           </div>
 
         </div>
+        
         <button id="all-news" class="transparent-btn">Смотреть все новости</button>
       </section>
     </div>
@@ -256,7 +261,7 @@
         
         <div class="footer-links">
           
-            <div class="links__bottom links__bottom--footer">
+            <div class="links__bottom links__bottom--footer clearfix">
               <a href="#">
                 <img class="facebook__ico" src="./img/facebook.svg" alt="facebook-link">
               </a>
@@ -264,9 +269,9 @@
                 <div class="phones__primary">
                   <img class="phones__ico" src="./img/phone.svg" alt="phone-ico">
                   <a href="tel:+0443314042">(044) 331-40-42</a>
-                  <button id="phones__btn"><img src="./img/chevron-down.svg" alt="sevron-on-button"></button>
+                  <button class="phones__btn"><img src="./img/chevron-down.svg" alt="chevron-on-button"></button>
                 </div>
-                <ul class="phones__mobile">
+                <ul class="phones__mobile phones__mobile--footer">
                   <li>
                     <img src="./img/vodafone.svg" alt="vodafone-ico">
                     <a href="tel:+380994455418">(099) 445-54-18</a>
